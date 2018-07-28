@@ -14,8 +14,9 @@
     "supertest": "^3.1.0"
   },
   "scripts": {
-    "test": "mocha index.spec.js --exit",
-    "start": "node index.js"
+ 
+    "test":"NODE_ENV=test mocha api/user/user.spec.js --exit",
+    "start": "node bin/www.js"
   },
   "author": "",
   "license": "ISC"
